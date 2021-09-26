@@ -144,3 +144,20 @@ input[type="search"]{
   margin-left: 15px;
 }
 
+.nav-title{
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.nav-image{
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+}
+
+.center{
+  align-items: center !important;
+}
