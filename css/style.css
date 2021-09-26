@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+/* стилизация ползунка для mozilla firefox */
+html,
+body {
+  scrollbar-color: rgb(31, 32, 32)
+  #686d6d;
+  /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: thin;
+  /* толщина auto | thin | none; */
+}
+
 body{
   background-color: #323636;
   color: #fff;
@@ -23,12 +33,26 @@ a{
   color: inherit;
 }
 
+/* стилизация overflow для webkit браузеров*/
+::-webkit-scrollbar { width: 8px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: rgb(31, 32, 32); }
+::-webkit-scrollbar-track {  background-color: #999;}
+::-webkit-scrollbar-track-piece {background-color: #686d6d;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: rgb(31, 32, 32); border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #999;}
+::-webkit-resizer { background-color: #666;}
+
 .header{
-  padding: 20px 32px;
+  padding: 10px 32px;
   display: flex;
   align-items: center;
   margin-bottom: 50px;
-  /* position: fixed; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #282b2b;
+  z-index: 999;
 }
 
 .menu-button{
@@ -127,7 +151,14 @@ input[type="search"]{
 }
 
 .sidebar{
-  padding-left:28px;
+  padding-left: 28px;
+  position: fixed;
+  left: 0;
+  top: 114px;
+  height: calc(100% - 114px);
+  overflow-y: auto;
+  width: 19%;
+  /* прокручиваемое меню */
 }
 
 .nav-item{
