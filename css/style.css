@@ -157,8 +157,12 @@ input[type="search"]{
   top: 114px;
   height: calc(100% - 114px);
   overflow-y: auto;
-  width: 19%;
   /* прокручиваемое меню */
+  width: 19%;
+
+  overflow-x: auto;
+  min-width: 200px;
+  
 }
 
 .nav-item{
