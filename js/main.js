@@ -1,4 +1,5 @@
-const searchBtn = document.querySelector('#mobile-search')
+if(document.documentElement.clientWidth < 440){
+  const searchBtn = document.querySelector('#mobile-search')
 const mobileSearch = document.querySelector('.input-group')
 const btn = document.querySelector('.button-search')
 const logo = document.querySelector('.logo')
@@ -13,4 +14,6 @@ btn.addEventListener('click',function(){
   searchBtn.style.display = 'inline-block'
   logo.style.display = 'block'
 })
+}
+
 
