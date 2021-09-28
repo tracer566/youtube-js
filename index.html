@@ -10,505 +10,611 @@
     <meta property="og:type" content="WebAplication" />
     <meta property="og:title" content="Ютуб бесплатный видеохостинг" />
     <meta property="og:image" content="img/Slice.jpg" />
-    <meta property="og:image:width" content="1200"/>
-    <meta property="og:image:height" content="630"/>
-    <meta property="og:desciption" content="Веб приложение на html,css,JavaScript" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:desciption"
+      content="Веб приложение на html,css,JavaScript"
+    />
     <meta property="og:site name" content="YouTube on JavaScript" />
     <meta property="article:author" content="Алексей Павлютенков" />
 
-    <link type="image/x-icon" rel="shortcut icon" href="favicon/YouTube1.ico">
-    <link type="image/png" sizes="16x16" rel="icon" href="favicon/YouTube0.ico">
-    <link type="image/png" sizes="64x64" rel="icon" href="favicon/YouTube2.ico">
-    <link type="image/png" sizes="96x96" rel="icon" href="favicon/YouTube3.ico">
+    <link type="image/x-icon" rel="shortcut icon" href="favicon/YouTube1.ico" />
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="favicon/YouTube0.ico"
+    />
+    <link
+      type="image/png"
+      sizes="64x64"
+      rel="icon"
+      href="favicon/YouTube2.ico"
+    />
+    <link
+      type="image/png"
+      sizes="96x96"
+      rel="icon"
+      href="favicon/YouTube3.ico"
+    />
 
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/fonts.css" />
     <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css"> -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-  <header class="header">
-    <button class="menu-button">
-      <span class="menu-line"></span>
-      <span class="menu-line"></span>
-      <span class="menu-line"></span>
-    </button>
-
-    <img src="img/Logo.svg" alt="YouTube" class="logo" />
-
-    <div class="input-group">
-      <input
-        type="search"
-        name="search"
-        class="input-search"
-        placeholder="Поиск"
-      />
-      <button type="submit" class="button-search">
-        <svg class="icon icon-search" width="17" height="17">
-          <use xlink:href="img/icons.svg#search"></use>
-        </svg>
+    <header class="header">
+      <button class="menu-button">
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
       </button>
-    </div>
-    <!-- /.input-group -->
 
-    <div class="icons">
-      <a href="#" class="icons-link">
-        <svg class="icon icon-video icons-style" width="25" height="18">
-          <use xlink:href="img/icons.svg#video"></use>
-        </svg>
-      </a>
+      <img src="img/Logo.svg" alt="YouTube" class="logo" />
+
+      <div class="input-group">
+        <input
+          type="search"
+          name="search"
+          class="input-search"
+          placeholder="Поиск"
+        />
+        <button type="submit" class="button-search">
+          <svg class="icon icon-search" width="17" height="17">
+            <use xlink:href="img/icons.svg#search"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- /.input-group -->
+
+      <div class="icons">
+        <a href="#" class="icons-link">
+          <svg class="icon icon-video icons-style" width="25" height="18">
+            <use xlink:href="img/icons.svg#video"></use>
+          </svg>
+        </a>
 
         <a href="#" class="icons-link">
-        <svg class="icon icon-apps icons-style" width="19" height="19">
-          <use xlink:href="img/icons.svg#apps"></use>
-        </svg>
-      </a>
+          <svg class="icon icon-apps icons-style" width="19" height="19">
+            <use xlink:href="img/icons.svg#apps"></use>
+          </svg>
+        </a>
 
         <a href="#" class="icons-link icons-style">
-        <svg class="icon icon-notification" width="20" height="24">
-          <use xlink:href="img/icons.svg#notification"></use>
-        </svg>
+          <svg class="icon icon-notification" width="20" height="24">
+            <use xlink:href="img/icons.svg#notification"></use>
+          </svg>
+        </a>
+      </div>
+      <!-- /.icons -->
+      <a href="#" class="user">
+        <img src="img/Userpic.jpg" class="user-avatar" alt="your-photo" />
       </a>
+    </header>
+    <!-- /.header -->
 
-    </div>
-    <!-- /.icons -->
-    <a href="#" class="user">
-      <img src="img/Userpic.jpg" class="user-avatar" alt="your-photo">
-    </a>
-  </header>
-  <!-- /.header -->
-
-<div class="container flex-box">
-  <aside class="sidebar">
-    <nav class="nav">
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <svg class="icon icon-home icons-style icons-hover" width="20px" height="20px">
-          <use xlink:href="img/icons.svg#home"></use>
-        </svg>
-          <span class="nav-text">
-            Главная
-          </span>
-            </a>
-        </li>
-        <li class="nav-item">
-        <a href="#" class="nav-link">
-            <svg class="icon icon-trending icons-style icons-hover" width="20px" height="20px">
-          <use xlink:href="img/icons.svg#trending"></use>
-        </svg>
-          <span class="nav-text">
-            Популярное
-          </span>
-        </a>
-        </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-          <svg class="icon icon-subscriptions icons-style icons-hover" width="20px" height="20px">
-          <use xlink:href="img/icons.svg#subscriptions"></use>
-        </svg>
-          <span class="nav-text">
-            Подписки
-          </span>
-        </a>
-        </li>
-      </ul>
-      <!-- /nav-menu -->
+    <div class="container flex-box">
+      <aside class="sidebar">
+        <nav class="nav">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg
+                  class="icon icon-home icons-style icons-hover"
+                  width="20px"
+                  height="20px"
+                >
+                  <use xlink:href="img/icons.svg#home"></use>
+                </svg>
+                <span class="nav-text"> Главная </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg
+                  class="icon icon-trending icons-style icons-hover"
+                  width="20px"
+                  height="20px"
+                >
+                  <use xlink:href="img/icons.svg#trending"></use>
+                </svg>
+                <span class="nav-text"> Популярное </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg
+                  class="icon icon-subscriptions icons-style icons-hover"
+                  width="20px"
+                  height="20px"
+                >
+                  <use xlink:href="img/icons.svg#subscriptions"></use>
+                </svg>
+                <span class="nav-text"> Подписки </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /nav-menu -->
 
         <nav class="nav">
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <svg class="icon icon-library icons-style icons-hover" width="20px" height="20px">
-          <use xlink:href="img/icons.svg#library"></use>
-        </svg>
-          <span class="nav-text">
-            Библиотека
-          </span>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg
+                  class="icon icon-library icons-style icons-hover"
+                  width="20px"
+                  height="20px"
+                >
+                  <use xlink:href="img/icons.svg#library"></use>
+                </svg>
+                <span class="nav-text"> Библиотека </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg
+                  class="icon icon-history icons-style icons-hover"
+                  width="20px"
+                  height="20px"
+                >
+                  <use xlink:href="img/icons.svg#history"></use>
+                </svg>
+                <span class="nav-text"> История </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg
+                  class="icon icon-watch-later icons-style icons-hover"
+                  width="20px"
+                  height="20px"
+                >
+                  <use xlink:href="img/icons.svg#watch-later"></use>
+                </svg>
+                <span class="nav-text"> Отложить </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg
+                  class="icon icon-favourites icons-style icons-hover"
+                  width="20px"
+                  height="20px"
+                >
+                  <use xlink:href="img/icons.svg#favourites"></use>
+                </svg>
+                <span class="nav-text"> Избранное </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg
+                  class="icon icon-liked icons-style icons-hover"
+                  width="20px"
+                  height="20px"
+                >
+                  <use xlink:href="img/icons.svg#liked"></use>
+                </svg>
+                <span class="nav-text"> Понравившиеся </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg
+                  class="icon icon-music icons-style icons-hover"
+                  width="20px"
+                  height="20px"
+                >
+                  <use xlink:href="img/icons.svg#music"></use>
+                </svg>
+                <span class="nav-text"> Музыка </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg
+                  class="icon icon-games icons-style icons-hover"
+                  width="20px"
+                  height="20px"
+                >
+                  <use xlink:href="img/icons.svg#games"></use>
+                </svg>
+                <span class="nav-text"> Игры </span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <svg
+                  class="icon icon-chevron-down icons-style icons-hover"
+                  width="20px"
+                  height="20px"
+                >
+                  <use xlink:href="img/icons.svg#chevron-down"></use>
+                </svg>
+                <span class="nav-text"> Показать еще </span>
+              </a>
+            </li>
+          </ul>
+          <!-- /nav-menu -->
+        </nav>
+        <!-- /nav -->
+
+        <h2 class="nav-title">Подписки</h2>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link center">
+              <img src="img/Oval.jpg" alt="chanel-photo" class="nav-image" />
+              <span class="nav-text">Злобяша</span>
             </a>
-        </li>
-        <li class="nav-item">
-        <a href="#" class="nav-link">
-            <svg class="icon icon-history icons-style icons-hover" width="20px" height="20px">
-          <use xlink:href="img/icons.svg#history"></use>
-        </svg>
-          <span class="nav-text">
-            История
-          </span>
-        </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-          <svg class="icon icon-watch-later icons-style icons-hover" width="20px" height="20px">
-          <use xlink:href="img/icons.svg#watch-later"></use>
-        </svg>
-          <span class="nav-text">
-            Отложить
-          </span>
-        </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-          <svg class="icon icon-favourites icons-style icons-hover" width="20px" height="20px">
-          <use xlink:href="img/icons.svg#favourites"></use>
-        </svg>
-          <span class="nav-text">
-            Избранное
-          </span>
-        </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-          <svg class="icon icon-liked icons-style icons-hover" width="20px" height="20px">
-          <use xlink:href="img/icons.svg#liked"></use>
-        </svg>
-          <span class="nav-text">
-            Понравившиеся
-          </span>
-        </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-          <svg class="icon icon-music icons-style icons-hover" width="20px" height="20px">
-          <use xlink:href="img/icons.svg#music"></use>
-        </svg>
-          <span class="nav-text">
-            Музыка
-          </span>
-        </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-          <svg class="icon icon-games icons-style icons-hover" width="20px" height="20px">
-          <use xlink:href="img/icons.svg#games"></use>
-        </svg>
-          <span class="nav-text">
-            Игры
-          </span>
-        </a>
-        </li>
-
-       <li class="nav-item">
-          <a href="#" class="nav-link">
-          <svg class="icon icon-chevron-down icons-style icons-hover" width="20px" height="20px">
-          <use xlink:href="img/icons.svg#chevron-down"></use>
-        </svg>
-          <span class="nav-text">
-            Показать еще
-          </span>
-        </a>
-        </li>
-      </ul>
-      <!-- /nav-menu -->
-     </nav>
-    <!-- /nav -->
-
-      <h2 class="nav-title">Подписки</h2>
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a href="#" class="nav-link center">
-            <img src="img/Oval.jpg" alt="chanel-photo" class="nav-image">
-            <span class="nav-text">Злобяша</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link center">
-            <img src="img/Oval-1.jpg" alt="chanel-photo" class="nav-image">
-            <span class="nav-text">Английский с Машей</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link center">
-            <img src="img/Oval-2.jpg" alt="chanel-photo" class="nav-image">
-            <span class="nav-text">Коверы на гитаре</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link center">
-            <img src="img/Oval-3.jpg" alt="chanel-photo" class="nav-image">
-            <span class="nav-text">Елена Русакова</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link center">
-            <img src="img/Oval-4.jpg" alt="chanel-photo" class="nav-image">
-            <span class="nav-text">Emma Hanson</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link center">
-            <img src="img/Oval-5.jpg" alt="chanel-photo" class="nav-image">
-            <span class="nav-text">ТехноБлог</span>
-          </a>
-        </li>
-      </ul>
-
-       <ul class="nav-menu">
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <svg class="icon icon-setting icons-style icons-hover" width="20px" height="20px">
-          <use xlink:href="img/icons.svg#setting"></use>
-        </svg>
-          <span class="nav-text">
-            Настройки
-          </span>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link center">
+              <img src="img/Oval-1.jpg" alt="chanel-photo" class="nav-image" />
+              <span class="nav-text">Английский с Машей</span>
             </a>
-        </li>
-        </ul> 
-  </aside>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link center">
+              <img src="img/Oval-2.jpg" alt="chanel-photo" class="nav-image" />
+              <span class="nav-text">Коверы на гитаре</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link center">
+              <img src="img/Oval-3.jpg" alt="chanel-photo" class="nav-image" />
+              <span class="nav-text">Елена Русакова</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link center">
+              <img src="img/Oval-4.jpg" alt="chanel-photo" class="nav-image" />
+              <span class="nav-text">Emma Hanson</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link center">
+              <img src="img/Oval-5.jpg" alt="chanel-photo" class="nav-image" />
+              <span class="nav-text">ТехноБлог</span>
+            </a>
+          </li>
+        </ul>
 
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg
+                class="icon icon-setting icons-style icons-hover"
+                width="20px"
+                height="20px"
+              >
+                <use xlink:href="img/icons.svg#setting"></use>
+              </svg>
+              <span class="nav-text">Настройки</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
 
-<main class="content">
-  <div class="channel">
-    <div class="channel-header">
-       <a href="#" class="channel-title">
-      <img src="img/photo-1.jpg" alt="photo" class="channel-avatar"> 
-      <span class="channel-text">Lionel Grand</span>
-    </a>
-    </div>
-   
-         <div class="first-list video-list">
-             <div class="video-card">
-            <div class="video-thumb">
-              <a class="link-video youtube-modal" href="https://www.youtube.com/watch?v=b-WXaC5FkwE" target="_blank">
-                <img src="img/01.jpg" alt="" class="thumbnail">
-              </a>
-
-            </div>
-            <!-- /.video-thumb -->
-            <h3 class="video-title">Ночь в Психиатрической БОЛЬНИЦЕ с призраками</h3>
-            <div class="video-info">
-              <span class="video-counter">
-                <span class="video-date">3 days ago</span>
-              </span>
-              <span class="video-channel">Ghoster</span>
-            </div>
-            <!-- /.video-info -->
-            <!-- /.video-card -->
+      <main class="content">
+        <div class="channel">
+          <div class="channel-header">
+            <a href="#" class="channel-title">
+              <img src="img/photo-1.jpg" alt="photo" class="channel-avatar" />
+              <span class="channel-text">Lionel Grand</span>
+            </a>
           </div>
 
-          <div class="video-card">
-            <div class="video-thumb">
-              <a class="link-video youtube-modal" href="https://www.youtube.com/watch?v=dOGE5RH4kSw" target="_blank">
-                <img src="img/02.jpg" alt="" class="thumbnail">
-              </a>
-
-            </div>
-            <!-- /.video-thumb -->
-            <h3 class="video-title">НОЧЬ в ЗАБРОШЕННОМ Замке с полтергейстом
-            </h3>
-            <div class="video-info">
-              <span class="video-counter">
-                <span class="video-date">1 months ago</span>
-              </span>
-              <span class="video-channel">Ghoster</span>
-            </div>
-            <!-- /.video-info -->
-          </div>
-
-          <div class="video-card">
-            <div class="video-thumb">
-              <a class="link-video youtube-modal" href="https://www.youtube.com/watch?v=zPnSdSo2Lug" target="_blank">
-                <img src="img/03.jpg" alt="" class="thumbnail">
-              </a>
-
-            </div>
-            <!-- /.video-thumb -->
-            <h3 class="video-title">Заброшенное авиаучилище. ДАТЧИКИ ДВИЖЕНИЯ?</h3>
-            <div class="video-info">
-              <span class="video-counter">
-                <span class="video-date">12 days ago</span>
-              </span>
-              <span class="video-channel">Ghoster</span>
-            </div>
-            <!-- /.video-info -->
-          </div>
-
-          <div class="video-card">
-            <div class="video-thumb">
-              <a class="link-video youtube-modal" href="https://www.youtube.com/watch?v=t-n-qqqYbWk&t=3s" target="_blank">
-                <img src="img/04.jpg" alt="" class="thumbnail">
-              </a>
-
-            </div>
-            <!-- /.video-thumb -->
-            <h3 class="video-title">Замок СГОРЕЛ из-за МЕНЯ? GhostBuster Аналитика</h3>
-            <div class="video-info">
-              <span class="video-counter">
-                <span class="video-date">6 months ago</span>
-              </span>
-              <span class="video-channel">Ghoster</span>
-            </div>
-            <!-- /.video-info -->
-          </div>
-
-          <div class="video-card">
-            <div class="video-thumb">
-              <a class="link-video youtube-modal" href="https://www.youtube.com/watch?v=2BHnC33ruF8" target="_blank">
-                <img src="img/05.jpg" alt="" class="thumbnail">
-              </a>
-
-            </div>
-            <!-- /.video-thumb -->
-            <h3 class="video-title">DOOM Eternal — Официальный трейлер №2</h3>
-            <div class="video-info">
-              <span class="video-counter">
-                <span class="video-date">2 days ago</span>
-              </span>
-              <span class="video-channel">Ghoster</span>
-            </div>
-            <!-- /.video-info -->
-          </div>
-
-          <div class="video-card">
-            <div class="video-thumb">
-              <a class="link-video youtube-modal" href="https://www.youtube.com/watch?v=Lnx-hQ1j2N4" target="_blank">
-                <img src="img/06.jpg" alt="" class="thumbnail">
-              </a>
-
-            </div>
-            <!-- /.video-thumb -->
-            <h3 class="video-title">Морфеус-программа</h3>
-            <div class="video-info">
-              <span class="video-counter">
-                <span class="video-date">3 days ago</span>
-              </span>
-              <span class="video-channel">Ghoster</span>
-            </div>
-            <!-- /.video-info -->
-          </div>
-         </div>
-    
-  </div>
-  <!-- /.channel -->
-
-  <div class="channel recommended">
-
-         <div class="channel-header">
-          <h2 class="recommended-title">Популярное</h2>
-        </div>
-
-        <div class="trending-list video-list">
-             <div class="video-card">
-            <div class="video-thumb">
-              <a href="https://www.youtube.com/watch?v=DhWRjJPzlWQ" class="link-video" target="_blank">
-                <img src="img/video-card/video-1-min.jpg" alt="video-card" class="thumbnail">
-              </a>  
-              <span class="video-duration">10:06</span>
+          <div class="first-list video-list">
+            <div class="video-card">
+              <div class="video-thumb">
+                <a
+                  class="link-video youtube-modal"
+                  href="https://www.youtube.com/watch?v=b-WXaC5FkwE"
+                  target="_blank"
+                >
+                  <img src="img/01.jpg" alt="" class="thumbnail" />
+                </a>
               </div>
-            
-              <h3 class="video-title">Самые высокие здания в мире и их история</h3>
+              <!-- /.video-thumb -->
+              <h3 class="video-title">
+                Ночь в Психиатрической БОЛЬНИЦЕ с призраками
+              </h3>
+              <div class="video-info">
+                <span class="video-counter">
+                  <span class="video-date">3 days ago</span>
+                </span>
+                <span class="video-channel">Ghoster</span>
+              </div>
+              <!-- /.video-info -->
+              <!-- /.video-card -->
+            </div>
+
+            <div class="video-card">
+              <div class="video-thumb">
+                <a
+                  class="link-video youtube-modal"
+                  href="https://www.youtube.com/watch?v=dOGE5RH4kSw"
+                  target="_blank"
+                >
+                  <img src="img/02.jpg" alt="" class="thumbnail" />
+                </a>
+              </div>
+              <!-- /.video-thumb -->
+              <h3 class="video-title">
+                НОЧЬ в ЗАБРОШЕННОМ Замке с полтергейстом
+              </h3>
+              <div class="video-info">
+                <span class="video-counter">
+                  <span class="video-date">1 months ago</span>
+                </span>
+                <span class="video-channel">Ghoster</span>
+              </div>
+              <!-- /.video-info -->
+            </div>
+
+            <div class="video-card">
+              <div class="video-thumb">
+                <a
+                  class="link-video youtube-modal"
+                  href="https://www.youtube.com/watch?v=zPnSdSo2Lug"
+                  target="_blank"
+                >
+                  <img src="img/03.jpg" alt="" class="thumbnail" />
+                </a>
+              </div>
+              <!-- /.video-thumb -->
+              <h3 class="video-title">
+                Заброшенное авиаучилище. ДАТЧИКИ ДВИЖЕНИЯ?
+              </h3>
+              <div class="video-info">
+                <span class="video-counter">
+                  <span class="video-date">12 days ago</span>
+                </span>
+                <span class="video-channel">Ghoster</span>
+              </div>
+              <!-- /.video-info -->
+            </div>
+
+            <div class="video-card">
+              <div class="video-thumb">
+                <a
+                  class="link-video youtube-modal"
+                  href="https://www.youtube.com/watch?v=t-n-qqqYbWk&t=3s"
+                  target="_blank"
+                >
+                  <img src="img/04.jpg" alt="" class="thumbnail" />
+                </a>
+              </div>
+              <!-- /.video-thumb -->
+              <h3 class="video-title">
+                Замок СГОРЕЛ из-за МЕНЯ? GhostBuster Аналитика
+              </h3>
+              <div class="video-info">
+                <span class="video-counter">
+                  <span class="video-date">6 months ago</span>
+                </span>
+                <span class="video-channel">Ghoster</span>
+              </div>
+              <!-- /.video-info -->
+            </div>
+
+            <div class="video-card">
+              <div class="video-thumb">
+                <a
+                  class="link-video youtube-modal"
+                  href="https://www.youtube.com/watch?v=2BHnC33ruF8"
+                  target="_blank"
+                >
+                  <img src="img/05.jpg" alt="" class="thumbnail" />
+                </a>
+              </div>
+              <!-- /.video-thumb -->
+              <h3 class="video-title">DOOM Eternal — Официальный трейлер №2</h3>
+              <div class="video-info">
+                <span class="video-counter">
+                  <span class="video-date">2 days ago</span>
+                </span>
+                <span class="video-channel">Ghoster</span>
+              </div>
+              <!-- /.video-info -->
+            </div>
+
+            <div class="video-card">
+              <div class="video-thumb">
+                <a
+                  class="link-video youtube-modal"
+                  href="https://www.youtube.com/watch?v=Lnx-hQ1j2N4"
+                  target="_blank"
+                >
+                  <img src="img/06.jpg" alt="" class="thumbnail" />
+                </a>
+              </div>
+              <!-- /.video-thumb -->
+              <h3 class="video-title">Морфеус-программа</h3>
+              <div class="video-info">
+                <span class="video-counter">
+                  <span class="video-date">3 days ago</span>
+                </span>
+                <span class="video-channel">Ghoster</span>
+              </div>
+              <!-- /.video-info -->
+            </div>
+          </div>
+        </div>
+        <!-- /.channel -->
+
+        <div class="channel recommended">
+          <div class="channel-header">
+            <h2 class="recommended-title">Популярное</h2>
+          </div>
+
+          <div class="trending-list video-list">
+            <div class="video-card">
+              <div class="video-thumb">
+                <a
+                  href="https://www.youtube.com/watch?v=DhWRjJPzlWQ"
+                  class="link-video"
+                  target="_blank"
+                >
+                  <img
+                    src="img/video-card/video-1-min.jpg"
+                    alt="video-card"
+                    class="thumbnail"
+                  />
+                </a>
+                <span class="video-duration">10:06</span>
+              </div>
+
+              <h3 class="video-title">
+                Самые высокие здания в мире и их история
+              </h3>
               <div class="video-info">
                 <span class="video-counter">
                   <span class="video-views">685к просмотров</span>
                   <span class="video-date">5 дней назад</span>
                 </span>
                 <span class="video-channel">Looper</span>
-              </div>  
-          </div>
-          <!-- /video-card -->
-             <div class="video-card">
-            <div class="video-thumb">
-              <a href="https://www.youtube.com/watch?v=hlANal2_tsc" class="link-video" target="_blank">
-                <img src="img/video-card/video-2-min.jpg" alt="video-card" class="thumbnail">
-              </a>  
-              <span class="video-duration">2:58</span>
               </div>
-            
-              <h3 class="video-title">Человек-Паук: нет пути домой - тизер-трейлер</h3>
+            </div>
+            <!-- /video-card -->
+            <div class="video-card">
+              <div class="video-thumb">
+                <a
+                  href="https://www.youtube.com/watch?v=hlANal2_tsc"
+                  class="link-video"
+                  target="_blank"
+                >
+                  <img
+                    src="img/video-card/video-2-min.jpg"
+                    alt="video-card"
+                    class="thumbnail"
+                  />
+                </a>
+                <span class="video-duration">2:58</span>
+              </div>
+
+              <h3 class="video-title">
+                Человек-Паук: нет пути домой - тизер-трейлер
+              </h3>
               <div class="video-info">
                 <span class="video-counter">
                   <span class="video-views">4млн просмотров</span>
                   <span class="video-date">5 дней назад</span>
                 </span>
                 <span class="video-channel">SonyPictures</span>
-              </div>  
-          </div>
-          <!-- /video-card -->
-             <div class="video-card">
-            <div class="video-thumb">
-              <a href="https://www.youtube.com/watch?v=4kHl4FoK1Ys" class="link-video" target="_blank">
-                <img src="img/video-card/video-3-min.jpg" alt="video-card" class="thumbnail">
-              </a>  
-              <span class="video-duration">3:06</span>
               </div>
-            
-              <h3 class="video-title">Modern Talking - You're My Heart, You're My Soul</h3>
+            </div>
+            <!-- /video-card -->
+            <div class="video-card">
+              <div class="video-thumb">
+                <a
+                  href="https://www.youtube.com/watch?v=4kHl4FoK1Ys"
+                  class="link-video"
+                  target="_blank"
+                >
+                  <img
+                    src="img/video-card/video-3-min.jpg"
+                    alt="video-card"
+                    class="thumbnail"
+                  />
+                </a>
+                <span class="video-duration">3:06</span>
+              </div>
+
+              <h3 class="video-title">
+                Modern Talking - You're My Heart, You're My Soul
+              </h3>
               <div class="video-info">
                 <span class="video-counter">
                   <span class="video-views">2млн просмотров</span>
                   <span class="video-date">20 лет назад</span>
                 </span>
                 <span class="video-channel">ModernTalking</span>
-              </div>  
-          </div>
-          <!-- /video-card -->
-             <div class="video-card">
-            <div class="video-thumb">
-              <a href="" class="link-video" target="_blank">
-                <img src="img/video-card/video-1-min.jpg" alt="video-card" class="thumbnail">
-              </a>  
-              <span class="video-duration">10:06</span>
               </div>
-            
-              <h3 class="video-title">Самые высокие здания в мире и их история</h3>
-              <div class="video-info">
-                <span class="video-counter">
-                  <span class="video-views">80к просмотров</span>
-                  <span class="video-date">5 дней назад</span>
-                </span>
-                <span class="video-channel">Злобяша</span>
-              </div>  
-          </div>
-          <!-- /video-card -->
-             <div class="video-card">
-            <div class="video-thumb">
-              <a href="" class="link-video" target="_blank">
-                <img src="img/video-card/video-1-min.jpg" alt="video-card" class="thumbnail">
-              </a>  
-              <span class="video-duration">10:06</span>
+            </div>
+            <!-- /video-card -->
+            <div class="video-card">
+              <div class="video-thumb">
+                <a href="" class="link-video" target="_blank">
+                  <img
+                    src="img/video-card/video-1-min.jpg"
+                    alt="video-card"
+                    class="thumbnail"
+                  />
+                </a>
+                <span class="video-duration">10:06</span>
               </div>
-            
-              <h3 class="video-title">Самые высокие здания</h3>
-              <div class="video-info">
-                <span class="video-counter">
-                  <span class="video-views">80к просмотров</span>
-                  <span class="video-date">5 дней назад</span>
-                </span>
-                <span class="video-channel">Злобяша</span>
-              </div>  
-          </div>
-          <!-- /video-card -->
-             <div class="video-card">
-            <div class="video-thumb">
-              <a href="" class="link-video" target="_blank">
-                <img src="img/video-card/video-1-min.jpg" alt="video-card" class="thumbnail">
-              </a>  
-              <span class="video-duration">10:06</span>
-              </div>
-            
-              <h3 class="video-title">Самые высокие здания</h3>
-              <div class="video-info">
-                <span class="video-counter">
-                  <span class="video-views">80к просмотров</span>
-                  <span class="video-date">5 дней назад</span>
-                </span>
-                <span class="video-channel">Злобяша</span>
-              </div>  
-          </div>
-          <!-- /video-card -->
-           
 
+              <h3 class="video-title">
+                Самые высокие здания в мире и их история
+              </h3>
+              <div class="video-info">
+                <span class="video-counter">
+                  <span class="video-views">80к просмотров</span>
+                  <span class="video-date">5 дней назад</span>
+                </span>
+                <span class="video-channel">Злобяша</span>
+              </div>
+            </div>
+            <!-- /video-card -->
+            <div class="video-card">
+              <div class="video-thumb">
+                <a href="" class="link-video" target="_blank">
+                  <img
+                    src="img/video-card/video-1-min.jpg"
+                    alt="video-card"
+                    class="thumbnail"
+                  />
+                </a>
+                <span class="video-duration">10:06</span>
+              </div>
+
+              <h3 class="video-title">Самые высокие здания</h3>
+              <div class="video-info">
+                <span class="video-counter">
+                  <span class="video-views">80к просмотров</span>
+                  <span class="video-date">5 дней назад</span>
+                </span>
+                <span class="video-channel">Злобяша</span>
+              </div>
+            </div>
+            <!-- /video-card -->
+            <div class="video-card">
+              <div class="video-thumb">
+                <a href="" class="link-video" target="_blank">
+                  <img
+                    src="img/video-card/video-1-min.jpg"
+                    alt="video-card"
+                    class="thumbnail"
+                  />
+                </a>
+                <span class="video-duration">10:06</span>
+              </div>
+
+              <h3 class="video-title">Самые высокие здания</h3>
+              <div class="video-info">
+                <span class="video-counter">
+                  <span class="video-views">80к просмотров</span>
+                  <span class="video-date">5 дней назад</span>
+                </span>
+                <span class="video-channel">Злобяша</span>
+              </div>
+            </div>
+            <!-- /video-card -->
+          </div>
+          <!-- /.trending-list video-list -->
         </div>
-        <!-- /.trending-list video-list -->
-  </div>
-  <!-- /.channel recommended -->
-</main>
-<!-- /.content -->
-</div>
-<!-- /.container -->
+        <!-- /.channel recommended -->
+      </main>
+      <!-- /.content -->
+    </div>
+    <!-- /.container -->
 
-          <!-- <div class="video-card">
+    <!-- <div class="video-card">
             <div class="video-thumb">
               <img src="img/video-card/video-1-min.jpg" alt="video-card" class="thumbnail">
               <span class="video-duration">4:15</span>
@@ -524,8 +630,6 @@
               </div>
              
           </div> -->
-         
-
 
     <!-- <script src="js/swiper-bundle.min.js"></script> -->
     <script defer src="js/main.js"></script>
