@@ -94,6 +94,7 @@ img{
   align-items: center;
   max-width: 830px; 
   width: 50%;
+  margin-right: 30px;
 }
 
 input[type="search"]{
@@ -382,5 +383,41 @@ input[type="search"]{
   }
 }
 
+@media screen and (max-width:994px) {
+  .nav-text{
+   font-size: 14px;
+  }
 
+  .recommended-title{
+    padding-left: 40px;
+    font-size: 18px;
+  }
 
+  .channel-title {
+    font-size: 18px;
+    padding-left: 30px;
+  }
+
+  .content {
+    padding-left: 23%;
+    padding-right: 20px;
+  }
+
+  .video-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .video-card{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:884px){
+  .sidebar{
+    min-width: 180px;
+    width: 17%;
+  }
+
+}
