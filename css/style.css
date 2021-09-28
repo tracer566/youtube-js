@@ -255,6 +255,7 @@ input[type="search"]{
   font-size: 26px;
   margin-bottom: 30px;
   width: 80%;
+  padding-left: 15px;
 }
 
 .channel-avatar{
@@ -286,7 +287,7 @@ input[type="search"]{
   right: 10px;
   background: #000000;
   mix-blend-mode: normal;
-  opacity: 0.3;
+  opacity: 0.6;
   border-radius: 12px;
   padding: 7px 10px;
   font-size: 14px;
@@ -349,6 +350,10 @@ input[type="search"]{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.channel-header{
+  padding-left: 15px;
 }
 
 /* ------------------- */
