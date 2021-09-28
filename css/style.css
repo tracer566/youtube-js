@@ -419,5 +419,53 @@ input[type="search"]{
     min-width: 180px;
     width: 17%;
   }
+  .icons{
+    display: none;
+  }
 
+  .user{
+    margin-left: auto;
+  }
+}
+
+@media(max-width:792px) {
+  .video-card{
+    width: 90%;
+  }
+
+  .video-thumb {
+    height: 40vw;
+  }
+
+  .content {
+    padding-left: 25%;
+    padding-right: 10px;
+  }
+
+}
+
+@media(max-width:660px){
+  .menu-button{
+    display: none;
+  }
+
+  .sidebar{
+    display: none;
+  }
+
+  .content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .video-card {
+    width: 100%;
+  }
+
+}
+
+@media(max-width:456px) {
+  .input-group{
+    display: none;
+  }
 }
