@@ -230,6 +230,7 @@ input[type="search"]{
   margin-top: 63px;
   padding-top: 40px;
   padding-left: 20%;
+  padding-right: 1%;
   
   /* padding-left: 300px; */
 }
@@ -357,6 +358,13 @@ input[type="search"]{
 }
 
 /* ------------------- */
+@media(min-width:1680px){
+  .content {
+    padding-left: 18%;
+    padding-right: 2%;
+  }
+}
+
 @media (max-width: 1600px) {
   .video-thumb {
     height: 210px;
