@@ -20,6 +20,7 @@ body{
   font-weight: 400;
 }
 
+/* сбросы стилей */
 button{
   cursor: pointer;
 }
@@ -31,6 +32,10 @@ li{
 a{
   text-decoration: none;
   color: inherit;
+}
+
+img{
+  max-width: 100%;
 }
 
 /* стилизация overflow для webkit браузеров*/
@@ -46,7 +51,6 @@ a{
   padding: 10px 32px;
   display: flex;
   align-items: center;
-  margin-bottom: 50px;
   position: fixed;
   top: 0;
   left: 0;
@@ -78,7 +82,7 @@ a{
 }
 
 .logo{
-  margin-right: 59px;
+  margin-right: 8%;
 }
 
 .input-group{
@@ -150,24 +154,35 @@ input[type="search"]{
   margin-bottom: 100px;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 1920px;
+  /* position: relative; */
+}
+
 .sidebar{
-  padding-left: 28px;
+  /* padding-left: 28px; */
+  padding-top: 45px;
   position: fixed;
   left: 0;
-  top: 114px;
-  height: calc(100% - 114px);
+  top: 55px;
+  height: calc(100% - 55px);
   overflow-y: auto;
   /* прокручиваемое меню */
   width: 19%;
-
+  max-width: 300px ;
+  background-color: #2a2e2e;
   overflow-x: auto;
   min-width: 200px;
   
 }
 
 .nav-item{
-  margin-bottom: 28px;
+  /* margin-bottom: 28px; */
   cursor: pointer;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 28px;
 }
 
 .nav-link{
@@ -177,6 +192,8 @@ input[type="search"]{
 
 .nav-item:hover{
   color:red;
+  /* background-color: rgba(31, 32, 32,.3); */
+  background-color: rgb(102, 102, 102,.5);
 }
 
 .icons-hover:hover{
@@ -193,6 +210,7 @@ input[type="search"]{
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
+  padding-left: 28px;
 }
 
 .nav-image{
@@ -204,3 +222,152 @@ input[type="search"]{
 .center{
   align-items: center !important;
 }
+
+.content{
+  /* width: calc(100% - 20%); */
+  /* height: 400px; */
+  /* background-color: green; */
+  margin-top: 63px;
+  padding-top: 40px;
+  padding-left: 20%;
+  
+  /* padding-left: 300px; */
+}
+
+/* .flex-box{
+  display: flex;
+} */
+
+/* .content {
+  width: calc(100% - 200px);
+  padding: 0 30px;
+} */
+
+.channel {
+  position: relative;
+  margin-bottom: 49px;
+}
+
+.channel-title{
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 30px;
+  width: 80%;
+}
+
+.channel-avatar{
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
+  margin-right: 20px;
+}
+
+/* main-content */
+.video-thumb{
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 14px;
+  position: relative;
+}
+
+.thumbnail{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* object-position: 0px 50px; */
+}
+
+.video-duration{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  border-radius: 12px;
+  padding: 7px 10px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.video-counter{
+  font-weight: 300;
+  font-size: 13px;
+  display: flex;
+}
+
+.video-title{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+}
+
+.video-info {
+  letter-spacing: 1px;
+  font-size: 13px;
+  color: #C2C2C2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.video-card{
+  width: 33%;
+  /* margin-bottom: 30px; */
+  padding: 15px;
+}
+
+.video-channel{
+   font-weight: 300;
+}
+
+.swiper-slide{
+  margin-right: 100px;
+}
+
+.video-views{
+  margin-right: 5px;
+}
+.video-views::after{
+  content:'';
+  width: 2px;
+  height: 2px;
+  margin-left: 6px;
+  display: inline-block;
+  background-color: #C2C2C2;
+  vertical-align: middle;
+}
+
+.video-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* ------------------- */
+@media (max-width: 1600px) {
+  .video-thumb {
+    height: 210px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .video-card {
+    width: 50%;
+    padding: 15px;
+  }
+
+  .video-thumb {
+    height: 20vw;
+  }
+}
+
+
+
