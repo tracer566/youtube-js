@@ -362,6 +362,10 @@ input[type="search"]{
   display: none;
 }
 
+.mobile-search{
+  display: none;
+}
+
 /* ------------------- */
 @media(min-width:1680px){
   .content {
@@ -387,7 +391,7 @@ input[type="search"]{
   }
 }
 
-@media screen and (max-width:994px) {
+@media (max-width:994px) {
   .nav-text{
    font-size: 14px;
   }
@@ -418,7 +422,7 @@ input[type="search"]{
   }
 }
 
-@media screen and (max-width:884px){
+@media(max-width:884px){
   .sidebar{
     min-width: 180px;
     width: 17%;
@@ -501,6 +505,7 @@ input[type="search"]{
 
   .mobile-sidebar .nav-text{
     margin: 0;
+    font-size: 12px;
   }
 
    .mobile-sidebar .icon{
@@ -510,11 +515,18 @@ input[type="search"]{
    body{
      padding-bottom: 50px;
    }
-
-
+    
 }
+
+@media(max-width:440px){
+  .mobile-search {
+    display: inline-block;
+  }
+}
+
 @media(max-width:456px) {
   .input-group{
     display: none;
   }
+ 
 }
